@@ -3,11 +3,11 @@ public class ContaCliente extends Pessoa implements OperacoesBancarias, ValidarD
     private int agenciaBancaria;
     private int numConta;
     private double saldo;
-    private String tipoConta;
-    private double limiteCredito;
+    private final String tipoConta;  // ← Adicionado final
+    private final double limiteCredito;  // ← Adicionado final
     
     // Construtores
-    public ContaCliente(String nome, String cpf, String endereco, 
+     public ContaCliente(String nome, String cpf, String endereco, 
                         int agenciaBancaria, int numConta) {
         super(nome, cpf, endereco);
         this.agenciaBancaria = agenciaBancaria;
@@ -17,7 +17,7 @@ public class ContaCliente extends Pessoa implements OperacoesBancarias, ValidarD
         this.limiteCredito = 500.0;
     }
     
-    public ContaCliente(String nome, String cpf, String endereco, 
+      public ContaCliente(String nome, String cpf, String endereco, 
                         int agenciaBancaria, int numConta, 
                         String tipoConta, double saldoInicial) {
         super(nome, cpf, endereco);
@@ -29,13 +29,35 @@ public class ContaCliente extends Pessoa implements OperacoesBancarias, ValidarD
     }
     
     // Getters e Setters
-    public int getAgenciaBancaria() { return agenciaBancaria; }
-    public void setAgenciaBancaria(int agenciaBancaria) { this.agenciaBancaria = agenciaBancaria; }
-    public int getNumConta() { return numConta; }
-    public void setNumConta(int numConta) { this.numConta = numConta; }
-    public double getSaldo() { return saldo; }
-    public String getTipoConta() { return tipoConta; }
-    public double getLimiteCredito() { return limiteCredito; }
+    public int getAgenciaBancaria() {
+         return agenciaBancaria; 
+        }
+
+    public void setAgenciaBancaria(int agenciaBancaria) {
+         this.agenciaBancaria = agenciaBancaria;
+         }
+
+    public int getNumConta() { 
+        return numConta; 
+    }
+
+    public void setNumConta(int numConta) { 
+        this.numConta = numConta; 
+    }
+
+    public double getSaldo() { 
+        return saldo; 
+    }
+
+@Override
+
+    public String getTipoConta(){
+        return tipoConta;
+    }
+    
+    public double getLimiteCredito() { 
+        return limiteCredito; 
+    }
     
     // ===== IMPLEMENTAÇÃO DA INTERFACE OperacoesBancarias =====
     @Override
