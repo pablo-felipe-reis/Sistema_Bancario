@@ -1,4 +1,4 @@
-public class ContaCliente extends Pessoa implements OperacoesBancarias, ValidarDocumentos {
+public class ContaCliente extends Pessoa implements IOperacoesBancarias, IValidarDocumentos {
     
     private int agenciaBancaria;
     private int numConta;

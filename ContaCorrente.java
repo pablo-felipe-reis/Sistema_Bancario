@@ -1,7 +1,12 @@
 public class ContaCorrente extends Conta {
     
-    private string tipo="Corrente";
-    private bool investimentoCDI = false;
-    private bool pgtoDebitoAutomatico = true;
-    private float limiteChequeEspecial = 3000;
+    private String tipo = "Corrente";
+    private boolean investimentoCDI = false;
+    private boolean pgtoDebitoAutomatico = true;
+    private double limiteChequeEspecial = 3000.0;
+
+    @Override
+    public String getTipoConta() {
+        return tipo;
+    }
 }

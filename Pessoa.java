@@ -5,7 +5,7 @@
  * As classes filhas vão HERDAR tudo isso sem precisar repetir
  */
 
-public abstract class Pessoa {  // abstract = não pode ser instanciada diretamente
+public class Pessoa {
     
     // ===== ATRIBUTOS==== 
     private String nome;
