@@ -1,10 +1,14 @@
 public class ContaPoupanca extends Conta {
     
-    private String tipo = "Poupança";
-    private boolean investimentoCDI = true;
+    private final String tipo = "Poupança";
+    private final boolean investimentoCDI = true;
 
     @Override
     public String getTipoConta() {
         return tipo;
+    }
+
+    public boolean isInvestimentoCDI() {
+        return investimentoCDI;
     }
 }

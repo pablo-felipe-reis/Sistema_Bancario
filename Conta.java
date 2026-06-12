@@ -1,8 +1,5 @@
 public class Conta implements IOperacoesBancarias {
-    
-    private int agencia;
-    private int numero;
-    private int digito;
+
     private double saldo;
 
     public void imprimirSaudacao() {

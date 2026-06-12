@@ -2,10 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("===== SISTEMA BANCÁRIO =====\n");
 
-        Pessoa dadosPessoais = new Pessoa("Pablo", "10914039709", "Assis Carneiro, 364");
-        Conta dadosConta = new ContaCorrente();
-
-        Cliente cliente = new Cliente(dadosPessoais,dadosConta);
+        // variáveis de exemplo removidas (não usadas diretamente neste fluxo)
 
         // Criação de contas (clientes)
         ContaCliente conta1 = new ContaCliente(
